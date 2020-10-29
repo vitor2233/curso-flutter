@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:olaMundo/app_controller.dart';
-
-import 'home_page.dart';
+import 'package:olaMundo/login_page.dart';
 
 class AppWidget extends StatelessWidget {
   @override
@@ -15,7 +14,7 @@ class AppWidget extends StatelessWidget {
               ? Brightness.dark 
               : Brightness.light,
           ),
-          home: HomePage(),
+          home: LoginPage(),
         );
       },
       animation: AppController.instance,
