@@ -5,22 +5,33 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() {
     return HomePageState();
   }
-
 }
 
 class HomePageState extends State<HomePage> {
-
   int counter = 0;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: Center(child: GestureDetector(child: Text('Contador: $counter'),
-        onTap: (){
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(child: Text('Vitor')),
+      ),
+      body: Center(
+          child: GestureDetector(
+        child: Text(
+          'Contador: $counter',
+          style: TextStyle(fontSize: 40),
+        ),
+        onTap: () {},
+      )),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
           setState(() {
             counter++;
           });
-        },)),
-      );
+        },
+      ),
+    );
   }
 }
