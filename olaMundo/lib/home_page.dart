@@ -33,30 +33,6 @@ class HomePageState extends State<HomePage> {
             Container(
               height: 30,
             ),
-            CustomSwitch(),
-            Container(
-              height: 30,
-            ),
-            CustomSwitch(),
-            Container(
-              height: 30,
-            ),
-            CustomSwitch(),
-            Container(
-              height: 30,
-            ),
-            CustomSwitch(),
-            Container(
-              height: 30,
-            ),
-            CustomSwitch(),
-            Container(
-              height: 30,
-            ),
-            CustomSwitch(),
-            Container(
-              height: 30,
-            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
