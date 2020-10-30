@@ -22,9 +22,9 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: 200,
-                  height: 200,
-                  child:Image.network('http://3.bp.blogspot.com/-SLkksAyw9AI/VB1ZFeN-3iI/AAAAAAAAAsw/Up0o1QyIGVE/s1600/Picapau%2Bvetorizado.png')),
+                    width: 200,
+                    height: 200,
+                    child: Image.asset('assets/images/pp.png')),
                 Container(height: 50),
                 TextField(
                   onChanged: (text) {
