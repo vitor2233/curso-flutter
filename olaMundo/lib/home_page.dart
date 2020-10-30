@@ -25,11 +25,11 @@ class HomePageState extends State<HomePage> {
           //mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('Contador: $counter'),
-            CustomSwitch(),
+            Center(child: CustomSwitch()),
             Container(
               height: 30,
             ),
-            CustomSwitch(),
+            Center(child: CustomSwitch()),
             Container(
               height: 30,
             ),
