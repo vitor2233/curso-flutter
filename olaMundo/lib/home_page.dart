@@ -18,14 +18,15 @@ class HomePageState extends State<HomePage> {
         child: Column(
           children: [
             UserAccountsDrawerHeader(
-              currentAccountPicture: Image.asset('assets/images/pp.png'),
-              accountName: Text('Vítor Guilherme'),
-              accountEmail: Text('vitor@email.com')),
+                currentAccountPicture:
+                    ClipOval(child: Image.asset('assets/images/pp.png')),
+                accountName: Text('Vítor Guilherme'),
+                accountEmail: Text('vitor@email.com')),
             ListTile(
               leading: Icon(Icons.home),
               title: Text('Início'),
               subtitle: Text('Tela de início'),
-              onTap: (){
+              onTap: () {
                 print('Home');
               },
             ),
@@ -33,7 +34,7 @@ class HomePageState extends State<HomePage> {
               leading: Icon(Icons.home),
               title: Text('Logout'),
               subtitle: Text('Finalizar sessão'),
-              onTap: (){
+              onTap: () {
                 Navigator.of(context).pushReplacementNamed('/');
               },
             ),
