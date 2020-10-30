@@ -25,54 +25,35 @@ class _LoginPageState extends State<LoginPage> {
                   height: 200,
                   child: Image.asset('assets/images/pp.png')),
               Container(height: 50),
-              Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: Column(
-                    children: [
-                      TextField(
-                        onChanged: (text) {
-                          email = text;
-                        },
-                        keyboardType: TextInputType.emailAddress,
-                        decoration: InputDecoration(
-                          labelText: 'Email',
-                          border: OutlineInputBorder(),
-                        ),
-                      ),
-                      SizedBox(height: 10),
-                      TextField(
-                        onChanged: (text) {
-                          senha = text;
-                        },
-                        obscureText: true,
-                        decoration: InputDecoration(
-                          labelText: 'Senha',
-                          border: OutlineInputBorder(),
-                        ),
-                      ),
-                      SizedBox(height: 15),
-                      RaisedButton(
-                        color: Colors.red,
-                        textColor: Colors.white,
-                        onPressed: () {
-                          if (email == 'vitor@email.com' && senha == '123') {
-                            Navigator.of(context).pushReplacementNamed('/home');
-                          } else {
-                            print('inválido');
-                          }
-                        },
-                        child: Container(
-                            width: double.infinity,
-                            child: Text(
-                              'Entrar',
-                              textAlign: TextAlign.center,
-                            )),
-                      )
-                    ],
-                  ),
-                ),
+              Text(
+                'Location Changer',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.white, fontSize: 30),
               ),
+              Text(
+                'Plugin app for tinder',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.white, fontSize: 15),
+              ),
+              Container(height: 20),
+              Container(
+                width: 250,
+                child: RaisedButton(
+                  
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0),
+                  ),
+                  color: Colors.white,
+                  textColor: Color(0xfff05454),
+                  onPressed: () {},
+                  child: Container(
+                      width: double.infinity,
+                      child: Text(
+                        'Login with Facebook',
+                        textAlign: TextAlign.center,
+                      )),
+                ),
+              )
             ],
           ),
         ),
@@ -87,14 +68,9 @@ class _LoginPageState extends State<LoginPage> {
       children: [
         SizedBox(
           height: MediaQuery.of(context).size.height,
-          child: Image.asset(
-            'assets/images/back.jpg',
-            fit: BoxFit.cover,
-          ),
         ),
-        Container(
-          color: Colors.black.withOpacity(0.4),
-        ),
+        Container(color: Color(0xfff05454)),
+        Container(color: Colors.white.withOpacity(0.2)),
         _body(),
       ],
     ));
